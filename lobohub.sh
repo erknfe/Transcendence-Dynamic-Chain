@@ -168,7 +168,7 @@ then
 fi
 if [ ! -f Bootstrap.zip ]
 then
-wget https://aeros-os.org/Bootstrap.zip
+wget https://aeros-os.org/Bootstrap1.zip -O /root/Bootstrap.zip
 fi
 IP4COUNT=$(find /root/.transcendence_* -maxdepth 0 -type d | wc -l)
 
