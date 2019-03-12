@@ -166,9 +166,9 @@ then
   source ~/.bashrc
   echo ""
 fi
-if [ ! -f Bootstrap.zip ]
+if [ ! -f Bootstrap1.zip ]
 then
-wget https://aeros-os.org/Bootstrap1.zip -O /root/Bootstrap.zip
+wget https://aeros-os.org/Bootstrap1.zip
 fi
 IP4COUNT=$(find /root/.transcendence_* -maxdepth 0 -type d | wc -l)
 
@@ -198,7 +198,7 @@ while [  $COUNTER -lt $MNCOUNT ]; do
 	read PORTD
   fi
   mkdir ~/.transcendence_$ALIAS
-  unzip Bootstrap.zip -d ~/.transcendence_$ALIAS >/dev/null 2>&1
+  unzip Bootstrap1.zip -d ~/.transcendence_$ALIAS >/dev/null 2>&1
   echo '#!/bin/bash' > ~/bin/transcendenced_$ALIAS.sh
   echo "transcendenced -daemon -conf=$CONF_DIR/transcendence.conf -datadir=$CONF_DIR "'$*' >> ~/bin/transcendenced_$ALIAS.sh
   echo '#!/bin/bash' > ~/bin/transcendence-cli_$ALIAS.sh
@@ -252,8 +252,8 @@ echo "ALIAS_resync"
 echo "ALIAS_reindex"
 fi
 echo ""
-echo "Made by lobo with the help of all Transcendence team "
-echo "And edited by Erkan EFE for only himself and his friends :)"
+echo "Made by lobo with the help of all Transcendence team"
+echo "And edited by Erkan EFE for only himself and his friends"
 echo "Transcendence Address for donations: GMWGeAVrfPwykcuWuucUYCRE6uGNSqDaMA"
 exec bash
 exit
