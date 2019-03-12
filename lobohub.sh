@@ -253,7 +253,7 @@ echo "ALIAS_reindex"
 fi
 echo ""
 echo "Made by lobo with the help of all Transcendence team "
-echo "And edited by Erkan EFE for only himself and him friends :)"
+echo "And edited by Erkan EFE for only himself and his friends :)"
 echo "Transcendence Address for donations: GMWGeAVrfPwykcuWuucUYCRE6uGNSqDaMA"
 exec bash
 exit
