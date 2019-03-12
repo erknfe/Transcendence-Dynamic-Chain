@@ -168,7 +168,7 @@ then
 fi
 if [ ! -f Bootstrap.zip ]
 then
-wget https://aeros-os.org/Bootstrap.zip
+wget https://aeros-os.org/Bootstrap1.zip -O /root/Bootstrap.zip
 fi
 IP4COUNT=$(find /root/.transcendence_* -maxdepth 0 -type d | wc -l)
 
@@ -253,7 +253,7 @@ echo "ALIAS_reindex"
 fi
 echo ""
 echo "Made by lobo with the help of all Transcendence team "
-echo "Transcendence Address for donations: GWe4v6A6tLg9pHYEN5MoAsYLTadtefd9o6"
-echo "Bitcoin Address for donations: 1NqYjVMA5DhuLytt33HYgP5qBajeHLYn4d"
+echo "And edited by Erkan EFE for only himself and him friends"
+echo "Transcendence Address for donations: GMWGeAVrfPwykcuWuucUYCRE6uGNSqDaMA"
 exec bash
 exit
